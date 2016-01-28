@@ -137,7 +137,7 @@ footer p
     letter-spacing: .02em;
 }
 
-.logo spam
+.logo span
 {
     text-transform: uppercase;
     letter-spacing: .5em;
@@ -148,6 +148,7 @@ footer p
 {
     background-color: #0A267A;
 }
+
 
 .home-wrapper
 {
@@ -224,3 +225,44 @@ footer p
 {
     padding-top: 1.8em;
 }
+
+@media (max-width:767px)
+{
+    #header-contact
+    {
+        display: none;
+    }
+    .logo
+    {
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 484px)
+{
+    .logo p
+    {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:767px)
+{
+    .logo span
+    {
+        font-size: .8em;
+    }
+}
+
+@media (max-width:384px)
+{
+    .logo p
+    {
+        font-size: 1em;
+    }
+    .logo span
+    {
+        font-size: .5em;
+    }
+}
+

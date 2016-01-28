@@ -5650,7 +5650,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     border-color: #337ab7;
 }
 
-
 .nav .nav-divider
 {
     height: 1px;
@@ -5951,7 +5950,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     max-height: 340px;
 }
 
-@media (max-device-width: 480px) and (orientation: landscape)
+@media (max-device-width: 485px) and (orientation: landscape)
 {
     .navbar-fixed-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse
