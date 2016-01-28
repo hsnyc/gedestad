@@ -27,7 +27,7 @@ html
 
 body
 {
-    font-family: 'Dosis', 'Lato', Helvetica, sans-serif;
+    font-family: 'Lato', 'Dosis', Helvetica, sans-serif;
     font-size: 16px;
     background-color: inherit;
 }
@@ -107,10 +107,12 @@ p
     padding: 20px;
 }
 
-footer p
+.copyright
 {
+    color: white;
     text-align: center;
     font-size: .8em;
+    padding: 15px 0;
 }
 
 .logo p
@@ -224,7 +226,7 @@ footer p
     }
 }
 
-@media (max-width: 484px)
+@media (max-width: 529px)
 {
     .logo p
     {
@@ -240,7 +242,7 @@ footer p
     }
 }
 
-@media (max-width:384px)
+@media (max-width: 407px)
 {
     .logo p
     {
@@ -254,15 +256,24 @@ footer p
 
 @media (max-width:991px)
 {
-@media (max-width:991px)
-{
     #header-contact h3
     {
         font-size: .9em;
         letter-spacing: 0.05em;
-    	margin-bottom: 0px;
+        margin-bottom: 0px;
     }
 }
 
+footer
+{
+    background-color: #092579;
+}
+
+@media (max-width:767px)
+{
+    .footer-nav
+    {
+        display: none;
+    }
 }
 
