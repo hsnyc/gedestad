@@ -98,6 +98,16 @@ p
     background-color: #000;
 }
 
+.navbar-collapse
+{
+    overflow-x: visible;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 0px;
+    box-shadow: 0px;
+    -webkit-overflow-scrolling: touch;
+}
+
 #home section
 {
 }
@@ -346,6 +356,7 @@ footer
 #about-doctor
 {
     background: rgb(229, 243, 255);
+    padding: 10apx 0 40px 10px;
 }
 
 #personalized-care
@@ -373,3 +384,54 @@ footer
     font-weight: 500;
 }
 
+#contact-us {
+
+    /* padding-bottom: 10px; */
+}
+
+#contact-us h3
+{
+    text-transform: uppercase;
+    color: white;
+    font-family: dosis, lato, san-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+
+#contact-us form
+{
+    padding: 0 20px;
+}
+
+#contact-us form .form-control
+{
+    border-radius: 0;
+}
+
+#contact-us input[type="text"],
+#contact-us input[type="email"]
+{
+    height: 40px;
+}
+
+#contact-us textarea
+{
+    min-height: 128px;
+    max-width: 320px;
+    margin-bottom: 15px;
+}
+
+#contact-us button
+{
+    display: block;
+    border-radius: 0;
+    width: 128px;
+    color: #092579;
+    background-color: #E5F3FF;
+    margin: 0 auto;
+}
+
+#contact-wrapper {
+	background-color: #092579;
+}

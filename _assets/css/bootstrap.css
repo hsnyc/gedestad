@@ -5911,6 +5911,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     -webkit-overflow-scrolling: touch;
 }
 
+
 .navbar-collapse.in
 {
     overflow-y: auto;
@@ -7042,7 +7043,6 @@ a.badge:focus
     -o-transition: border 0.2s ease-in-out;
     transition: border 0.2s ease-in-out;
 }
-
 
 .thumbnail > img,
 .thumbnail a > img
