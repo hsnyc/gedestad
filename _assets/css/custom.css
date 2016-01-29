@@ -346,12 +346,30 @@ footer
 #about-doctor
 {
     background: rgb(229, 243, 255);
-    padding: 0 0 100px;
 }
-
 
 #personalized-care
 {
     margin-right: 40px;
+}
+
+#gedestat-thumbnail
+{
+    display: block;
+    width: 119px;
+    height: 149px;
+    margin: 0 25px 6px 0;
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
+}
+
+#about-doctor h3
+{
+    font-family: dosis, lato, san-serif;
+    color: #092579;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 500;
 }
 
