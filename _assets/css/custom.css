@@ -277,6 +277,8 @@ footer
     }
 }
 
+/* Personalized Care section -- Circles -- */
+
 .specials-wrapper
 {
     position: relative;
@@ -293,7 +295,7 @@ footer
     z-index: 5;
     width: 256px;
     height: 256px;
-    margin: -35px 0 0 33.10047%;
+    margin: -35px 0 0 60%;
     border: 17px solid rgb(229, 243, 255);
     border-radius: 137px;
     background-color: rgb(255, 255, 255);
@@ -330,7 +332,7 @@ footer
     z-index: 7;
     width: 158px;
     height: 158px;
-    margin: -50px 0 0 42.73278%;
+    margin: -50px 0 0 70%;
     border: 5px solid rgb(237, 117, 61);
     border-radius: 100px;
     background-color: rgba(9, 37, 121, 0.7);
@@ -338,12 +340,11 @@ footer
 
 .patients-first p
 {
-    float: left;
-    width: 76.3513513513%;
-    min-height: 65px;
-    margin: 53px 0 0 13.09122%;
-    font-size: 1.143em;
+    margin: 50px 0 0;
+    font-size: 1em;
     font-weight: 700;
     color: rgb(229, 243, 255);
+    text-align: center;
 }
+
 
