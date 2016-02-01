@@ -441,6 +441,23 @@ footer
     background: #092579;
 }
 
+.app-clock-container {
+  width: 100px;
+  height: 100px;
+  margin: 24px auto;
+  border: 5px solid rgb(237, 117, 61);
+  border-radius: 100px;
+}
+
+.set-app-clock {
+  width: 33px;
+  height: 33px;
+  margin: 19px 0 0 20%;
+  border-right: 3px solid rgb(237, 117, 61);
+  border-bottom: 3px solid rgb(237, 117, 61);
+  overflow: hidden;
+}
+
 #set-appointment h3
 {
     font-family: dosis, lato, san-serif;
@@ -450,13 +467,5 @@ footer
     color: #ED753D;
     letter-spacing: .2em;
     font-weight: 500;
-}
-
-.fa-clock-o
-{
-    font-size: 8em;
-    color: #ED753D;
-    margin-left: 35%;
-    padding-top: 20px;
 }
 
