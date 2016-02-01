@@ -98,6 +98,16 @@ p
     background-color: #000;
 }
 
+.navbar-collapse
+{
+    overflow-x: visible;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 0px;
+    box-shadow: 0px;
+    -webkit-overflow-scrolling: touch;
+}
+
 #home section
 {
 }
@@ -282,20 +292,15 @@ footer
 .specials-wrapper
 {
     position: relative;
-    float: left;
-    clear: both;
-    width: 100%;
-    background-color: rgb(229, 243, 255);
 }
 
 .personal-care
 {
-    position: inherit;
-    float: left;
+    position: relative;
     z-index: 5;
     width: 256px;
     height: 256px;
-    margin: -35px 0 0 60%;
+    margin: -35px 0 0 0;
     border: 17px solid rgb(229, 243, 255);
     border-radius: 137px;
     background-color: rgb(255, 255, 255);
@@ -314,11 +319,8 @@ footer
 
 .personal-care p
 {
-    float: left;
-    clear: both;
     font-size: .85em;
     color: rgb(66, 70, 82);
-    margin-right: 0;
     margin-top: 15px;
     margin-bottom: 0;
     text-align: center;
@@ -327,12 +329,10 @@ footer
 .patients-first
 {
     position: relative;
-    float: left;
-    clear: both;
     z-index: 7;
     width: 158px;
     height: 158px;
-    margin: -50px 0 0 70%;
+    margin: -50px 0 0 40%;
     border: 5px solid rgb(237, 117, 61);
     border-radius: 100px;
     background-color: rgba(9, 37, 121, 0.7);
@@ -347,4 +347,91 @@ footer
     text-align: center;
 }
 
+.no-col-padding
+{
+    padding-left: 0;
+    padding-right: 0;
+}
 
+#about-doctor
+{
+    background: rgb(229, 243, 255);
+    padding: 10apx 0 40px 10px;
+}
+
+#personalized-care
+{
+    margin-right: 40px;
+}
+
+#gedestat-thumbnail
+{
+    display: block;
+    width: 119px;
+    height: 149px;
+    margin: 0 25px 6px 0;
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
+}
+
+#about-doctor h3
+{
+    font-family: dosis, lato, san-serif;
+    color: #092579;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+#contact-us {
+
+    /* padding-bottom: 10px; */
+}
+
+#contact-us h3
+{
+    text-transform: uppercase;
+    color: white;
+    font-family: dosis, lato, san-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+
+#contact-us form
+{
+    padding: 0 20px;
+}
+
+#contact-us form .form-control
+{
+    border-radius: 0;
+}
+
+#contact-us input[type="text"],
+#contact-us input[type="email"]
+{
+    height: 40px;
+}
+
+#contact-us textarea
+{
+    min-height: 128px;
+    max-width: 320px;
+    margin-bottom: 15px;
+}
+
+#contact-us button
+{
+    display: block;
+    border-radius: 0;
+    width: 128px;
+    color: #092579;
+    background-color: #E5F3FF;
+    margin: 0 auto;
+}
+
+#contact-wrapper {
+	background-color: #092579;
+}
