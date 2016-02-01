@@ -356,7 +356,7 @@ footer
 #about-doctor
 {
     background: rgb(229, 243, 255);
-    padding: 10apx 0 40px 10px;
+    padding: 10px 0 40px 10px;
 }
 
 #personalized-care
@@ -384,9 +384,8 @@ footer
     font-weight: 500;
 }
 
-#contact-us {
-
-    /* padding-bottom: 10px; */
+#contact-us
+{
 }
 
 #contact-us h3
@@ -397,7 +396,6 @@ footer
     font-weight: 500;
     font-size: 1.8em;
 }
-
 
 #contact-us form
 {
@@ -432,6 +430,33 @@ footer
     margin: 0 auto;
 }
 
-#contact-wrapper {
-	background-color: #092579;
+#contact-wrapper
+{
+    background-color: #092579;
 }
+
+#set-appointment
+{
+    height: 214px;
+    background: #092579;
+}
+
+#set-appointment h3
+{
+    font-family: dosis, lato, san-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ED753D;
+    letter-spacing: .2em;
+    font-weight: 500;
+}
+
+.fa-clock-o
+{
+    font-size: 8em;
+    color: #ED753D;
+    margin-left: 35%;
+    padding-top: 20px;
+}
+
