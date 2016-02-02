@@ -437,25 +437,27 @@ footer
 
 #set-appointment
 {
-    height: 214px;
+    height: 220px;
     background: #092579;
 }
 
-.app-clock-container {
-  width: 100px;
-  height: 100px;
-  margin: 24px auto;
-  border: 5px solid rgb(237, 117, 61);
-  border-radius: 100px;
+.app-clock-container
+{
+    width: 100px;
+    height: 100px;
+    margin: 24px auto;
+    border: 5px solid rgb(237, 117, 61);
+    border-radius: 100px;
 }
 
-.set-app-clock {
-  width: 33px;
-  height: 33px;
-  margin: 19px 0 0 20%;
-  border-right: 3px solid rgb(237, 117, 61);
-  border-bottom: 3px solid rgb(237, 117, 61);
-  overflow: hidden;
+.set-app-clock
+{
+    width: 33px;
+    height: 33px;
+    margin: 19px 0 0 20%;
+    border-right: 3px solid rgb(237, 117, 61);
+    border-bottom: 3px solid rgb(237, 117, 61);
+    overflow: hidden;
 }
 
 #set-appointment h3
@@ -466,6 +468,47 @@ footer
     text-align: center;
     color: #ED753D;
     letter-spacing: .2em;
+    font-weight: 500;
+}
+
+#oral-price h3
+{
+    color: #ED753D;
+    font-family: dosis, lato, san-serif;
+    font-size: 8.75em;
+    font-weight: 500;
+    margin: 0px;
+}
+
+#oral-exam h3
+{
+    color: #ED753D;
+    font-family: dosis, lato, san-serif;
+    font-size: 3em;
+    font-weight: 500;
+    margin: 0px;
+}
+
+#oral-exam p
+{
+    color: #0A267A;
+    letter-spacing: .15em;
+    padding-left: 20px;
+}
+
+#oral-exam p:first-of-type
+{
+    font-size: 2em;
+    font-family: dosis, lato, san-serif;
+    letter-spacing: .2em;
+    margin-top: -45px;
+    padding-left: 0px;
+}
+
+#oral-exam p span
+{
+    font-size: 2.5em;
+    letter-spacing: 0;
     font-weight: 500;
 }
 
