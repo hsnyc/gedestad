@@ -134,6 +134,19 @@ p
     letter-spacing: .02em;
 }
 
+@media (max-width:1199px)
+{
+    .logo p
+    {
+        font-size: 1.75em;
+    }
+    .logo-wrapper
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .logo span
 {
     text-transform: uppercase;
@@ -256,11 +269,11 @@ p
 {
     .logo p
     {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .logo span
     {
-        font-size: .5em;
+        font-size: .65em;
     }
 }
 
@@ -356,7 +369,7 @@ footer
 #about-doctor
 {
     background: rgb(229, 243, 255);
-    padding: 10apx 0 40px 10px;
+    padding: 10px 0 40px 10px;
 }
 
 #personalized-care
@@ -384,9 +397,8 @@ footer
     font-weight: 500;
 }
 
-#contact-us {
-
-    /* padding-bottom: 10px; */
+#contact-us
+{
 }
 
 #contact-us h3
@@ -397,7 +409,6 @@ footer
     font-weight: 500;
     font-size: 1.8em;
 }
-
 
 #contact-us form
 {
@@ -432,6 +443,172 @@ footer
     margin: 0 auto;
 }
 
-#contact-wrapper {
-	background-color: #092579;
+#contact-wrapper
+{
+    background-color: #092579;
 }
+
+#set-appointment
+{
+    height: 220px;
+    background: #092579;
+}
+
+.app-clock-container
+{
+    width: 100px;
+    height: 100px;
+    margin: 24px auto;
+    border: 5px solid rgb(237, 117, 61);
+    border-radius: 100px;
+}
+
+.set-app-clock
+{
+    width: 33px;
+    height: 33px;
+    margin: 19px 0 0 20%;
+    border-right: 3px solid rgb(237, 117, 61);
+    border-bottom: 3px solid rgb(237, 117, 61);
+    overflow: hidden;
+}
+
+#set-appointment h3
+{
+    font-family: dosis, lato, san-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ED753D;
+    letter-spacing: .2em;
+    font-weight: 500;
+}
+
+#oral-price h3
+{
+    color: #ED753D;
+    font-family: dosis, lato, san-serif;
+    font-size: 8.5em;
+    font-weight: 500;
+    margin: 20px 0 0;
+}
+
+#oral-exam h3
+{
+    color: #ED753D;
+    font-family: dosis, lato, san-serif;
+    font-size: 3em;
+    font-weight: 500;
+    margin: 5px 0 0;
+}
+
+#oral-exam p
+{
+    color: #0A267A;
+    letter-spacing: .15em;
+    padding-left: 20px;
+}
+
+#oral-exam p:first-of-type
+{
+    font-size: 2em;
+    font-family: dosis, lato, san-serif;
+    letter-spacing: .2em;
+    margin-top: -45px;
+    padding-left: 0px;
+}
+
+#oral-exam p span
+{
+    font-size: 2.5em;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+@media (max-width:1199px)
+{
+    #oral-price h3
+    {
+        font-size: 8em;
+        margin-top: 20px;
+    }
+    #oral-exam h3
+    {
+        font-size: 2em;
+        font-weight: 500;
+        margin: 20px 0 30px;
+    }
+    #oral-exam p:first-of-type
+    {
+        font-size: 2em;
+        letter-spacing: 0em;
+    }
+    #oral-exam p span
+    {
+        font-size: 2em;
+    }
+}
+
+@media (max-width:991px)
+{
+    #set-appointment
+    {
+        padding-top: 15px;
+    }
+    #oral-exam
+    {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    #oral-exam h3
+    {
+        font-size: 2em;
+        font-weight: 500;
+        margin: 10px 0 10px;
+    }
+    #oral-exam p:first-of-type
+    {
+        font-size: 2em;
+        letter-spacing: 0em;
+        margin: 0px;
+    }
+    #oral-exam p span
+    {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:320px)
+{
+    #oral-exam p span
+    {
+        line-height: 0;
+    }
+}
+
+.navbar
+{
+    margin-bottom: 0;
+}
+
+#home-content
+{
+    background-color: #E5F3FF;
+}
+
+@media (max-width:991px)
+{
+    .personal-care
+    {
+        margin: 0px;
+    }
+    #contact-us textarea
+    {
+        max-width: 991px;
+    }
+    #oral-price h3
+    {
+        margin-top: 0;
+    }
+}
+
