@@ -134,6 +134,19 @@ p
     letter-spacing: .02em;
 }
 
+@media (max-width:1199px)
+{
+    .logo p
+    {
+        font-size: 1.75em;
+    }
+    .logo-wrapper
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .logo span
 {
     text-transform: uppercase;
@@ -256,11 +269,11 @@ p
 {
     .logo p
     {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .logo span
     {
-        font-size: .5em;
+        font-size: .65em;
     }
 }
 
@@ -477,7 +490,7 @@ footer
     font-family: dosis, lato, san-serif;
     font-size: 8.5em;
     font-weight: 500;
-    margin: 0px;
+    margin: 20px 0 0;
 }
 
 #oral-exam h3
@@ -486,7 +499,7 @@ footer
     font-family: dosis, lato, san-serif;
     font-size: 3em;
     font-weight: 500;
-    margin: 0px;
+    margin: 5px 0 0;
 }
 
 #oral-exam p
@@ -551,7 +564,7 @@ footer
     {
         font-size: 2em;
         font-weight: 500;
-        margin: 20px 0 10px;
+        margin: 10px 0 10px;
     }
     #oral-exam p:first-of-type
     {
@@ -565,7 +578,6 @@ footer
     }
 }
 
-
 @media (max-width:320px)
 {
     #oral-exam p span
@@ -574,4 +586,29 @@ footer
     }
 }
 
+.navbar
+{
+    margin-bottom: 0;
+}
+
+#home-content
+{
+    background-color: #E5F3FF;
+}
+
+@media (max-width:991px)
+{
+    .personal-care
+    {
+        margin: 0px;
+    }
+    #contact-us textarea
+    {
+        max-width: 991px;
+    }
+    #oral-price h3
+    {
+        margin-top: 0;
+    }
+}
 
