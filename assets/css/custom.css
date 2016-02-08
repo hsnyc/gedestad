@@ -82,6 +82,7 @@ p
 .dropdown-menu
 {
     border: none;
+    border-radius: 0;
     box-shadow: none;
 }
 
@@ -206,6 +207,10 @@ p
     color: #424652;
     background-color: #ED753D;
     border-color: #337ab7;
+}
+
+.current-menu-item {
+    background-color: #ED753D;
 }
 
 #header-contact
