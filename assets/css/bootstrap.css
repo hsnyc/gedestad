@@ -5911,7 +5911,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     -webkit-overflow-scrolling: touch;
 }
 
-
 .navbar-collapse.in
 {
     overflow-y: auto;
