@@ -2,4 +2,9 @@ _assets/css/_pgbackup
 _pgbackup
 _pgexport
 pinegrow.json
+<<<<<<< HEAD
 *.codekit
+=======
+config.codekit
+_pgexport
+>>>>>>> home-branch
