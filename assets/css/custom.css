@@ -661,7 +661,7 @@ footer
     {
         padding-top: 48px;
         padding-bottom: 48px;
-        background-color: #f1f1f1;
+        background-color: transparent;
     }
     .container .jumbotron,
     .container-fluid .jumbotron
@@ -675,6 +675,15 @@ footer
 {
     margin-top: 20px;
     margin-left: 35px;
+    background-color: #ED753D;
+    border-color: transparent;
+    letter-spacing: 1.5px;
+}
+
+#home-cta p .btn:hover
+{
+    color: #ED753D;
+    background-color: #fff;
 }
 
 #home-cta ul li
@@ -682,3 +691,24 @@ footer
     line-height: 32px;
 }
 
+#home-cta h1,
+#home-cta ul
+{
+    color: #fff;
+}
+
+#home-cta
+{
+    background-image: url('../images/home-bg.jpg');
+}
+
+/* Home page */
+
+#main img
+{
+    margin-bottom: 20px;
+}
+
+#main article {
+	margin-bottom: 40px;
+}

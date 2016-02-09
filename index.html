@@ -85,28 +85,18 @@
                 <!--.navbar-wrapper -->
             </header>
             <section class="main container" id="home-content" wp-site-content>
-                <div class="row">
-                    <div class="jumbotron" id="home-cta"> 
-                        <h1>Knowledge & Experience</h1> 
-                        <ul>
-                            <li>Knowledgeable & highly-skilled Dentist</li>
-                            <li>Dr. Gedestad listens & clearly explains options</li>
-                            <li>Have healthy teeth & gums for life</li>
-                            <li>A friendly & comfortable dental experience</li>
-                        </ul>                         
-                        <p><a class="btn btn-primary btn-lg" role="button">Call Now</a></p> 
-                    </div>
-                </div>
                 <div class="content row">
                     <!-- MAIN ================================================== -->
-                    <section class="main col col-lg-8">
-                        <h2>Main Content</h2>
-                        <p>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
-                        <p>Once Boostrap 4 is release I will be updating the files with sass. Please let me know if you have any feedback or questions. Thanks for checking out this base theme :)</p>
+                    <section class="col col-lg-8" id="main">
+                        <article wp-loop wp-post-class wp-the-id>
+                            <h2 wp-the-title>Main Content</h2>
+                            <img src="assets/images/article-image.jpg" class="img-rounded img-responsive" wp-the-post-thumbnail="full" wp-the-post-thumbnail-if="true" />
+                            <p wp-the-content>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
+                        </article>
                     </section>
                     <!-- main -->
                     <!-- SIDEBAR ================================================== -->
-                    <section class="sidebar col col-lg-4">
+                    <section class="sidebar col col-lg-4" wp-register-sidebar="Right Sidebar" wp-register-sidebar-id="right_sidebar" wp-dynamic-sidebar="right_sidebar" wp-register-sidebar-before="<div>" wp-register-sidebar-after="</div>">
                         <h2>Sidebar</h2>
                         <p>Hello. I am the sidebar. I will now entice you with some ramdom lorem ipsum text.. here we gooo ..Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </section>
