@@ -126,7 +126,7 @@ p
     padding: 15px 0 0;
 }
 
-.logo p
+.logo a
 {
     color: #ED753D;
     font-size: 2em;
@@ -137,7 +137,7 @@ p
 
 @media (max-width:1199px)
 {
-    .logo p
+    .logo a
     {
         font-size: 1.75em;
     }
@@ -258,7 +258,7 @@ p
 
 @media (max-width: 529px)
 {
-    .logo p
+    .logo a
     {
         font-size: 1.5em;
     }
@@ -274,7 +274,7 @@ p
 
 @media (max-width: 407px)
 {
-    .logo p
+    .logo a
     {
         font-size: 1.2em;
     }
