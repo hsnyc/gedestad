@@ -77,6 +77,16 @@ p
     font-weight: 400;
 }
 
+::selection
+{
+    background: #F0B197;
+}
+
+::-moz-selection
+{
+    background: #F0B197;
+}
+
 .dropdown-menu
 {
     border: none;
@@ -107,15 +117,6 @@ p
     border-top: 0px;
     box-shadow: 0px;
     -webkit-overflow-scrolling: touch;
-}
-
-#home section
-{
-}
-
-#home-content section
-{
-    padding: 20px;
 }
 
 .copyright
@@ -599,11 +600,6 @@ footer
     margin-bottom: 0;
 }
 
-#home-content
-{
-    background-color: #E5F3FF;
-}
-
 @media (max-width:991px)
 {
     .personal-care
@@ -703,16 +699,30 @@ footer
     background-image: url('../images/home-bg.jpg');
 }
 
-/* Home page */
+/* -- Home page -- */
 
-#main img
+.main
+{
+    background-color: #E5F3FF;
+}
+
+.main img
 {
     margin-bottom: 20px;
 }
 
-#main article
+.main article
 {
     margin-bottom: 40px;
+}
+
+.main article h3 {
+    color: #092579;
+}
+
+.main section
+{
+    padding: 20px;
 }
 
 @media (min-width:768px) and (max-width:1199px)
@@ -723,3 +733,57 @@ footer
     }
 }
 
+.main article h2
+{
+    font-family: dosis, lato, san-serif;
+    color: #092579;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* -- search widget -- */
+
+form[role="search"] input[type="text"]
+{
+    padding: 4px 8px;
+}
+
+form[role="search"] input[type="submit"]
+{
+    margin-left: 10px;
+    color: #E5F3FF;
+    background-color: #092579;
+}
+
+form[role="search"] input[type="submit"]:hover
+{
+    color: #ED753D;
+}
+
+/* -- Category widget -- */
+
+h3.widgettitle
+{
+    color: #ED753D;
+}
+
+li.cat-item
+{
+    line-height: 1.4em;
+}
+
+/* -- tag cloud -- */
+
+.tagcloud a
+{
+    color: #ED753D;
+    background-color: #092579;
+    padding: 4px 8px;
+    margin: 4px 4px 4px 0;
+}
+
+#search-content section h2 span
+{
+    color: #ED753D;
+}

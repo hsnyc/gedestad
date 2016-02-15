@@ -84,15 +84,15 @@
                 </div>
                 <!--.navbar-wrapper -->
             </header>
-            <section class="main container" id="home-content" wp-site-content>
-                <div class="content row">
+            <section class="main container" wp-site-content>
+                <div class="content row" id="search-content">
                     <!-- MAIN ================================================== -->
                     <div class="well">Search.html</div>
-                    <section class="col col-lg-8" id="main">
+                    <section class="col col-lg-8">
+                        <h2>Search Results for : <span wp-the-search-query wp-the-search-query-set="content">search string</span></h2>
                         <article wp-loop wp-post-class wp-the-id>
-                            <h2 wp-the-title>Main Content</h2>
-                            <img src="assets/images/article-image.jpg" class="img-rounded img-responsive" wp-the-post-thumbnail="full" wp-the-post-thumbnail-if="true" />
-                            <p wp-the-content>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
+                            <a href="http://" wp-href="post_permalink"><h3 wp-the-title>Main Content</h3></a>
+                            <p wp-the-excerpt>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
                         </article>
                     </section>
                     <!-- main -->

@@ -84,7 +84,7 @@
                 </div>
                 <!--.navbar-wrapper -->
             </header>
-            <section class="main container" id="home-content" wp-site-content>
+            <section class="main container" wp-site-content>
                 <div class="row">
                     <div class="well">Front-Page.html</div>
                     <div class="jumbotron" id="home-cta">
@@ -98,9 +98,9 @@
                         <p><a class="btn btn-primary btn-lg" role="button">Call Now</a></p>
                     </div>
                 </div>
-                <div class="content row">
+                <div class="content row" id="frontpage-content">
                     <!-- MAIN ================================================== -->
-                    <section class="col col-lg-8" id="main">
+                    <section class="col col-lg-12">
                         <article wp-loop wp-post-class wp-the-id>
                             <h2 wp-the-title>Main Content</h2>
                             <img src="assets/images/article-image.jpg" class="img-rounded img-responsive" wp-the-post-thumbnail="full" wp-the-post-thumbnail-if="true" />
@@ -109,10 +109,6 @@
                     </section>
                     <!-- main -->
                     <!-- SIDEBAR ================================================== -->
-                    <section class="sidebar col col-lg-4" wp-register-sidebar="Right Sidebar" wp-register-sidebar-id="right_sidebar" wp-dynamic-sidebar="right_sidebar" wp-register-sidebar-before="<div>" wp-register-sidebar-after="</div>">
-                        <h2>Sidebar</h2>
-                        <p>Hello. I am the sidebar. I will now entice you with some ramdom lorem ipsum text.. here we gooo ..Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </section>
                     <!-- sidebar -->
                 </div>
                 <!-- content row -->
