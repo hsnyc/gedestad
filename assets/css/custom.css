@@ -389,8 +389,8 @@ footer
 #gedestat-thumbnail
 {
     display: block;
-    width: 119px;
-    height: 149px;
+    width: 150px;
+    height: 150px;
     margin: 0 25px 6px 0;
     -webkit-transition: border 0.2s ease-in-out;
     -o-transition: border 0.2s ease-in-out;
@@ -834,7 +834,8 @@ li.cat-item
     font-size: .8em;
 }
 
-.frontpage-content h2
+.frontpage-content h2,
+.about-text h2
 {
     font-family: dosis, lato, san-serif;
     color: #092579;
@@ -842,4 +843,22 @@ li.cat-item
     font-weight: 600;
     text-transform: uppercase;
     margin: 30px 15px 20px;
+}
+
+.about-text h3 {
+	margin-top: 0px;
+    font-family: dosis, lato, san-serif;
+    color: #092579;
+}
+
+.ada-logo {
+	margin: 25px 0 0 20px;
+}
+
+@media (max-width:409px)
+{
+	.ada-logo {
+		margin: 20px 0 0 0px;
+	}
+
 }

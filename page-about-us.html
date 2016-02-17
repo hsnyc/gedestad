@@ -85,19 +85,72 @@
                 <!--.navbar-wrapper -->
             </header>
             <section class="main container" wp-site-content>
-                <div class="content row" id="about-content">
+                <div class="content row about-text" wp-loop wp-post-class wp-the-id>
                     <!-- MAIN ================================================== -->
-                    <section class="col col-lg-8">
-                        <h2>Main Content</h2>
-                        <p>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
-                        <p>Once Boostrap 4 is release I will be updating the files with sass. Please let me know if you have any feedback or questions. Thanks for checking out this base theme :)</p>
+                    <php>
+                    //take the content and split it into array
+                        $columns = explode( "<hr />", get_the_content() );
+                    
+                        $column_1 = '';
+                        $column_2 = '';
+                    
+                        //if at least one column set $column_1 variable
+                        if(count($columns) > 0) {
+                            $column_1 = $columns[0];
+                        }
+                    
+                        //if the second column is set, put it into the $column_2 variable
+                        if(count($columns) > 1) {
+                            $column_2 = $columns[1];
+                        }
+                    </php>
+                    <h2 wp-the-title>Main Content</h2>
+                    <section class="col col-lg-7" wp-call-function="echo $column_1" wp-call-function-set="content">
+                        <article>
+                            <p>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
+                        </article>
+                    </section>
+                    <section class="col col-lg-5" wp-call-function="echo $column_2" wp-call-function-set="content">
+                        <article>
+                            <p>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
+                        </article>
                     </section>
                     <!-- main -->
                     <!-- SIDEBAR ================================================== -->
-                    <section class="sidebar col col-lg-4">
-                        <h2>Sidebar</h2>
-                        <p>Hello. I am the sidebar. I will now entice you with some ramdom lorem ipsum text.. here we gooo ..Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </section>
+                    <!-- sidebar -->
+                </div>
+                <div class="content row" id="about-images">
+                    <div class="col-xs-6 col-md-3"> 
+                        <div class="thumbnail"> 
+                            <img src="assets/images/staff-1.jpg" alt="">
+                            <figcaption class="text-center">Dr D. Gedestad</figcaption>
+                            <figcaption class="text-center office-title">Principal Dentist</figcaption>
+                        </div>                         
+                    </div>
+                    <div class="col-xs-6 col-md-3"> 
+                        <div class="thumbnail"> 
+                            <img src="assets/images/staff-2.jpg" alt="" class="">
+                            <figcaption class="text-center">Dr P. Morris</figcaption>
+                            <figcaption class="text-center office-title">Associate Dentist</figcaption>
+                        </div>                         
+                    </div>
+                    <div class="col-xs-6 col-md-3"> 
+                        <div class="thumbnail"> 
+                            <img src="assets/images/staff-3.jpg" alt="">
+                            <figcaption class="text-center">Brandy Tastle</figcaption>
+                            <figcaption class="text-center office-title">Practice Manger</figcaption>
+                        </div>                         
+                    </div>
+                    <div class="col-xs-6 col-md-3"> 
+                        <div class="thumbnail"> 
+                            <img src="assets/images/staff-4.jpg" alt="">
+                            <figcaption class="text-center">Marry Jane</figcaption>
+                            <figcaption class="text-center office-title">Dental Assistant</figcaption>
+                        </div>                         
+                    </div>
+                    <!-- MAIN ================================================== -->
+                    <!-- main -->
+                    <!-- SIDEBAR ================================================== -->
                     <!-- sidebar -->
                 </div>
                 <!-- content row -->
@@ -133,7 +186,7 @@
                                 <div class="col-md-7">
                                     <h3>Douglas Gedestad, DMD</h3>
                                     <div class="col-xs-6 col-md-3 no-col-padding" id="gedestat-thumbnail">
-                                        <img src="assets/images/drgedestat.jpg" alt="dr gedestat">
+                                        <img src="assets/images/staff-1.jpg" alt="dr gedestat" class="img-responsive">
                                     </div>
                                     <p>You can rest assured that you'll receive the personalized attention you deserve. As your dentist I'll listen to your needs and answer all your questions. Plus, you'll enjoy our friendly, caring team. Dr. Douglas A Gedestad has trained with some of the world's most prominent Cosmetic Dental Specialists. He is rapidly becoming known as one of the leading Sacramento cosmetic dentists. <br><br>
 Dr. Gedestad is a highly qualified dentist who can't wait to share his knowledge and expertise with you!</p>
