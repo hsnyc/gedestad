@@ -97,13 +97,34 @@
                         <p><a class="btn btn-primary btn-lg" role="button">Call Now</a></p>
                     </div>
                 </div>
-                <div class="content row" id="frontpage-content">
+                <div class="content row frontpage-content" wp-loop wp-post-class wp-the-id>
                     <!-- MAIN ================================================== -->
-                    <section class="col col-lg-12">
-                        <article wp-loop wp-post-class wp-the-id>
-                            <h2 wp-the-title>Main Content</h2>
-                            <img src="assets/images/article-image.jpg" class="img-rounded img-responsive" wp-the-post-thumbnail="full" wp-the-post-thumbnail-if="true" />
-                            <p wp-the-content>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
+                    <php>
+                    //take the content and split it into array
+                    $columns = explode( "<hr />", get_the_content() );
+                    
+                    $column_1 = '';
+                    $column_2 = '';
+                    
+                    //if at least one column set $column_1 variable
+                    if(count($columns) > 0) {
+                        $column_1 = $columns[0];
+                    }
+                    
+                    //if the second column is set, put it into the $column_2 variable
+                    if(count($columns) > 1) {
+                        $column_2 = $columns[1];
+                    }
+                    </php>
+                    <h2 wp-the-title>Main Content</h2>
+                    <section class="col col-lg-6" wp-call-function="echo $column_1" wp-call-function-set="content">
+                        <article class="">
+                            <p>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
+                        </article>
+                    </section>
+                    <section class="col col-lg-6" wp-call-function="echo $column_2" wp-call-function-set="content">
+                        <article>
+                            <p>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
                         </article>
                     </section>
                     <!-- main -->
