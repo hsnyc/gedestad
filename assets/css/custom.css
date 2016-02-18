@@ -845,20 +845,89 @@ li.cat-item
     margin: 30px 15px 20px;
 }
 
-.about-text h3 {
-	margin-top: 0px;
+.about-text h3
+{
+    margin-top: 0px;
     font-family: dosis, lato, san-serif;
     color: #092579;
 }
 
-.ada-logo {
-	margin: 25px 0 0 20px;
+.ada-logo
+{
+    margin: 25px 0 0 20px;
 }
 
 @media (max-width:409px)
 {
-	.ada-logo {
-		margin: 20px 0 0 0px;
-	}
-
+    .ada-logo
+    {
+        margin: 20px 0 0 0px;
+    }
 }
+
+.gallery-item .gallery-details
+{
+    text-align: center;
+    padding-top: 5px;
+    background-color: transparent;
+    border: 0px;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.gallery-item .gallery-details h5
+{
+    margin: 0;
+    font-size: 1em;
+    font-weight: 500;
+    position: relative;
+}
+
+.filter li
+{
+    font-family: dosis, lato, sans-serif;
+    color: #424652;
+}
+
+.content-block
+{
+    margin-top: 20px;
+}
+
+.filter
+{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.gallery-item .gallery-thumb .gallery-zoom, .gallery-item .gallery-thumb .gallery-link {
+	width: 45px;
+    height: 45px;
+    text-align: center;
+    background-color: #092579;
+    display: none;
+    line-height: 45px;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    border-radius: 2px;
+}
+
+.gallery-item .gallery-thumb .gallery-zoom:hover, .gallery-item .gallery-thumb .gallery-link:hover
+{
+    background-color: #ED753D;
+    color: #ffffff;
+}
+
+.filter li a:hover, .filter li a:focus, .filter li a.active
+{
+	color: #ED753D;
+    text-decoration: none;
+}
+
+
