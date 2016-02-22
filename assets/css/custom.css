@@ -711,7 +711,7 @@ footer
 
 .main img
 {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 .main article
@@ -764,21 +764,32 @@ footer
 
 /* -- search widget -- */
 
-form[role="search"] input[type="text"]
+.search-form label span
 {
-    padding: 4px 8px;
+    color: #092579;
+    font-family: dosis, lato, sans-serif;
+    margin-right: 10px;
 }
 
-form[role="search"] input[type="submit"]
+.search-form label input {
+    padding: 4px 6px;
+    border: 1px solid #092579;
+}
+
+.search-form input[type="submit"]
 {
+    height: 32px;
     margin-left: 10px;
-    color: #E5F3FF;
+    color: #ED753D;
     background-color: #092579;
+    border: 0px;
 }
 
-form[role="search"] input[type="submit"]:hover
+.search-form input[type="submit"]:hover
 {
-    color: #ED753D;
+    color: #092579;
+    background-color: #ED753D;
+
 }
 
 /* -- Category widget -- */
@@ -947,27 +958,62 @@ li.cat-item
     margin: 20px 0;
 }
 
-#contact-page-content form .form-group
+#caldera_form_1 form .form-group
 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-#contact-page-content form .form-group input,
-#contact-page-content form .form-group textarea
+#caldera_form_1 form .form-group input,
+#caldera_form_1 form .form-group select,
+#caldera_form_1 form .form-group textarea
 {
     border: 1px solid #092579;
     border-radius: 0px;
     font-size: 1.2em;
 }
 
-#contact-page-content form .form-group textarea
+#caldera_form_1 form .form-group textarea
 {
-    max-width: 555px;
+    /*max-width: 555px;*/
 }
 
-#contact-page-content form .form-group input
+#caldera_form_1 form .form-group input,
+#caldera_form_1 form .form-group select
 {
     height: 40px;
+}
+
+.cf-toggle-switch .btn-success {
+    color: #fff;
+    background-color: #ED753D;
+    border-color: #ED753D;
+}
+
+.caldera-grid .btn-success {
+  color: #fff;
+  background-color: #ED753D;
+  border-color: #ED753D;
+}
+
+.caldera-grid .btn-success:hover,
+.caldera-grid .btn-success:focus,
+.caldera-grid .btn-success.focus,
+.caldera-grid .btn-success:active,
+.caldera-grid .btn-success.active,
+.open>.dropdown-toggle.caldera-grid .btn-success {
+    color: #fff;
+    background-color: #ED753D;
+    border-color: #ED753D;
+}
+
+.caldera-grid .radio-inline, .caldera-grid .checkbox-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 36px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: 400;
+    cursor: pointer;
 }
 
 .text-muted
@@ -989,6 +1035,10 @@ html input[type="button"],
 input[type="button"]
 {
     background-color: #092579;
+}
+
+#caldera_form_1 form input[type="checkbox"] {
+    margin: -8px 0px 10px -18px;
 }
 
 .btn-primary
@@ -1036,13 +1086,9 @@ input[type="button"]
 
 @media (max-width:991px)
 {
-    #contact-page-content form .form-group textarea
+    #caldera_form_1 form .form-group textarea
     {
         max-width: 555px;
         width: 100%;
     }
 }
-
-
-
-
