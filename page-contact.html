@@ -87,22 +87,59 @@
                 <!--.navbar-wrapper -->
             </header>
             <section class="main container" wp-site-content>
-                <div class="content row" id="search-content">
+                <div class="content row" id="contact-page-content">
                     <!-- MAIN ================================================== -->
-                    <div class="well">Search.html</div>
-                    <section class="col col-lg-8">
-                        <h2>Search Results for : <span wp-the-search-query wp-the-search-query-set="content">search string</span></h2>
-                        <article wp-loop wp-post-class wp-the-id>
-                            <a href="http://" wp-href="post_permalink"><h3 wp-the-title>Main Content</h3></a>
-                            <p wp-the-excerpt>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
-                        </article>
-                    </section>
+                    <div class="well">                                                                                                Page-contact.html
+</div>
+                    <div class="content-block contact-3" wp-cz-section="blocks_contact_3" wp-cz-section-title="Contact Us">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <article wp-loop wp-post-class wp-the-id>
+                                        <h2 wp-the-title>Main Content</h2>
+                                        <p wp-the-content>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. .</p>
+                                    </article>
+                                    <div id="contact" class="form-container">
+                                        <fieldset wp-register-sidebar="Contact 3 Form" wp-register-sidebar-id="blocks_contact_3_form" wp-register-sidebar-before="<div>" wp-register-sidebar-after="</div>" wp-dynamic-sidebar="blocks_contact_3_form">
+                                            <div id="message"></div>
+                                            <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
+                                                <div class="form-group">
+                                                    <input name="name" id="name" type="text" value="" placeholder="Name" class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input name="email" id="email" type="text" value="" placeholder="Email" class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input name="phone" id="phone" type="text" value="" placeholder="Phone" class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea name="comments" id="comments" class="form-control" rows="3" placeholder="Message" id="textArea"></textarea>
+                                                    <div class="editContent">
+                                                        <p class="small text-muted"><span class="guardsman">* All fields are required.</span> Once we receive your message we will respond as soon as possible.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button class="btn btn-primary" type="submit" id="cf-submit" name="submit">Send</button>
+                                                </div>
+                                            </form>
+                                        </fieldset>
+                                    </div>
+                                    <!-- /.form-container -->
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 wp-cz-control="blocks_contact_3_title" wp-cz-control-label="Title" wp-cz-control-section="blocks_contact_3" wp-cz-theme-mod="blocks_contact_3_title">How to find us</h3>
+                                    <p class="" wp-cz-control="blocks_contact_3_text" wp-cz-control-label="Text" wp-cz-control-type="textarea" wp-cz-control-section="blocks_contact_3" wp-cz-theme-mod="blocks_contact_3_text">We are easy to find in the heart of London's business district, just a short walk from several Tube Stations.</p>
+                                    <map>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49734.84837152616!2d-121.53256162189462!3d38.574770588806544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ad0c23ba62e89%3A0x312ebc135b89f33!2s2409+L+St%2C+Sacramento%2C+CA+95816!5e0!3m2!1sen!2sus!4v1455905881373" style="border: 1px solid #4B62A1;" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </map>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container -->
+                    </div>
                     <!-- main -->
                     <!-- SIDEBAR ================================================== -->
-                    <section class="sidebar col col-lg-4" wp-register-sidebar="Right Sidebar" wp-register-sidebar-id="right_sidebar" wp-dynamic-sidebar="right_sidebar" wp-register-sidebar-before="<div>" wp-register-sidebar-after="</div>">
-                        <h2>Sidebar</h2>
-                        <p>Hello. I am the sidebar. I will now entice you with some ramdom lorem ipsum text.. here we gooo ..Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </section>
                     <!-- sidebar -->
                 </div>
                 <!-- content row -->
