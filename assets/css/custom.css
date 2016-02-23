@@ -513,13 +513,11 @@ footer
     font-weight: 500;
 }
 
-#contact-us
-{
-}
 
 #contact-us h3
 {
     text-transform: uppercase;
+    text-align: center;
     color: white;
     font-family: dosis, lato, san-serif;
     font-weight: 500;
@@ -549,7 +547,7 @@ footer
     margin-bottom: 15px;
 }
 
-#contact-us button
+#contact-us form input[type="submit"]
 {
     display: block;
     border-radius: 0;
@@ -557,6 +555,10 @@ footer
     color: #092579;
     background-color: #E5F3FF;
     margin: 0 auto;
+}
+
+#contact-us form input[type="submit"]:hover {
+    background-color: rgb(237, 117, 61);
 }
 
 #contact-wrapper
