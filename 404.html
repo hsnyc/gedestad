@@ -89,17 +89,28 @@
             <section class="main container" wp-site-content>
                 <div class="content row" id="404-content">
                     <!-- MAIN ================================================== -->
-                    <div class="well">404.html</div>
                     <section class="col col-lg-8">
-                        <article wp-loop wp-post-class wp-the-id>
-                            <h2 wp-the-title>Main Content</h2>
-                            <img src="assets/images/article-image.jpg" class="img-rounded img-responsive" wp-the-post-thumbnail="full" wp-the-post-thumbnail-if="true" />
-                            <p wp-the-content>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
+                        <article class="">
+                            <h2>Oops!, the page was not Found :(</h2>
+                            <h3 class="">But perhaps the following links can help:</h3>
+                            <ul>
+                                <php>
+                                $categories = get_categories( array(
+                                                     'orderby' => 'name',
+                                                     'parent'  => 0
+                                                 	) );
+                                                     foreach ( $categories as $category ) {
+                                                         printf( '<li><a href="%1$s">%2$s</a></li>',
+                                                             esc_url( get_category_link( $category->term_id ) ),
+                                                             esc_html( $category->name )
+                                                         ); }
+                                </php>
+                            </ul>
                         </article>
                     </section>
                     <!-- main -->
                     <!-- SIDEBAR ================================================== -->
-                    <section class="sidebar col col-lg-4" wp-register-sidebar="Right Sidebar" wp-register-sidebar-id="right_sidebar" wp-dynamic-sidebar="right_sidebar" wp-register-sidebar-before="<div>" wp-register-sidebar-after="</div>">
+                    <section class="sidebar col col-lg-4">
                         <h2>Sidebar</h2>
                         <p>Hello. I am the sidebar. I will now entice you with some ramdom lorem ipsum text.. here we gooo ..Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </section>

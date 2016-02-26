@@ -1211,3 +1211,8 @@ input[type="button"]
    color: #ED753D;
    text-decoration: underline;
 }
+
+a[href^="tel:"] {
+	color: #092579 !important;
+  text-decoration: none !important;
+}
