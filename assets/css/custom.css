@@ -902,12 +902,27 @@ footer
 
 h3.widgettitle
 {
-    color: #ED753D;
+    color: #092579;
 }
 
 li.cat-item
 {
     line-height: 1.4em;
+    list-style: none;
+}
+
+li.cat-item a {
+  font-family: dosis, lato, sans-serif;
+  color: #092579;
+  font-weight: bold;
+}
+
+li.cat-item a::before {
+  content: "\f061";
+  font-family: FontAwesome;
+  color: #ED753D;
+  font-size: 12px;
+  padding-right: 0.5em;
 }
 
 /* -- tag cloud -- */
