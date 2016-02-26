@@ -89,9 +89,10 @@
             <section class="main container" wp-site-content>
                 <div class="content row" id="page-content">
                     <!-- MAIN ================================================== -->
-                    <section class="content-block gallery-1 gallery-1-1" wp-cz-section="blocks_gallery_1_1" wp-cz-section-title="Gallery 1-1" wp-cz-control="blocks_gallery_1_1_source" wp-cz-control-label="'Content source (post with gallery)'" wp-cz-control-type="custom" wp-cz-control-type-custom="WP_BlocksContentDropdown_Customize_Control" wp-cz-control-section="blocks_gallery_1_1">
+                    <section class="content-block gallery-1 gallery-1-1" wp-cz-control="blocks_gallery_1_1_source" wp-cz-control-label="'Content source (post with gallery)'" wp-cz-control-type="custom" wp-cz-control-type-custom="WP_BlocksContentDropdown_Customize_Control" wp-cz-control-section="blocks_gallery_1_1" wp-cz-section="blocks_gallery_1_1" wp-cz-section-title="Gallery 1-1">
                         <php>
                         $gallery = blocks_get_gallery( get_theme_mod( 'blocks_gallery_1_1_source' ) );
+                        
                         </php>
                         <div class="">
                             <div class="underlined-title">
