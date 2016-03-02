@@ -382,7 +382,7 @@ footer {
   font-size: 1.8em;
 }
 #contact-us form {
-  padding: 0 20px;
+  padding: 10px 20px 0;
 }
 #contact-us form .form-control {
   border-radius: 0;
@@ -390,12 +390,12 @@ footer {
 #contact-us input[type="text"],
 #contact-us input[type="email"] {
   height: 40px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
 }
 #contact-us form textarea {
   min-height: 128px;
   max-width: 320px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 #contact-us form input[type="submit"],
 #contact-us form button[type="submit"] {
@@ -865,7 +865,7 @@ html input[type="button"],
 input[type="button"] {
   background-color: #092579;
 }
-.caldera-grid form input[type="checkbox"] {
+#caldera_form_1 form input[type="checkbox"] {
   margin: -8px 0px 10px -18px;
 }
 .btn-primary {
@@ -902,7 +902,7 @@ input[type="button"] {
   font-weight: 900;
 }
 @media (max-width: 991px) {
-  .caldera-grid form .form-group textarea {
+  #caldera_form_1 form .form-group textarea {
     max-width: 991px;
     width: 100%;
   }

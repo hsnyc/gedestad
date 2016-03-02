@@ -90,6 +90,10 @@
                 <div class="content row" id="single-content">
                     <!-- MAIN ================================================== -->
                     <section class="col col-lg-8">
+                        <php>
+                                             if ( function_exists('yoast_breadcrumb') )
+                        {yoast_breadcrumb('<p id="breadcrumbs">','</p>');}
+                        </php>
                         <article wp-loop wp-post-class wp-the-id class="">
                             <img src="assets/images/article-image.jpg" class="img-rounded img-responsive" wp-the-post-thumbnail="full" wp-the-post-thumbnail-if="true" />
                             <h2 wp-the-title class="">Main Content</h2>
