@@ -48,6 +48,9 @@ a {
 p {
   font-weight: 400;
 }
+ol li {
+  padding: 1rem;
+}
 /* ==== WordPress Core ==== */
 .alignnone {
   margin: 5px 20px 20px 0;
@@ -237,10 +240,14 @@ a img.aligncenter {
   color: #BFD1DC;
   text-align: right;
 }
-#header-contact h3 {
+#header-contact h3,
+#header-contact h3 a {
   font-size: 1.1em;
   letter-spacing: .1em;
   margin-bottom: 0px;
+}
+#header-contact h3 a {
+  color: #ED753D;
 }
 #header-contact span,
 #business-hours {
@@ -747,7 +754,7 @@ li.cat-item a::before {
   overflow: hidden;
 }
 .gallery-item .gallery-details h5 {
-  margin: 0;
+  margin-top: 0.5em;
   font-size: 1em;
   font-weight: 500;
   position: relative;
@@ -916,7 +923,7 @@ input[type="button"] {
   color: #ED753D;
   text-decoration: underline;
 }
-a[href^="tel:"] {
+#contact-page-content article a[href^="tel:"] {
   color: #092579 !important;
   text-decoration: none !important;
 }

@@ -87,72 +87,25 @@
                 <!--.navbar-wrapper -->
             </header>
             <section class="main container" wp-site-content>
-                <div class="content row about-text" wp-loop wp-post-class wp-the-id>
+                <div class="content row" id="single-content">
                     <!-- MAIN ================================================== -->
-                    <php>
-                    //take the content and split it into array
-                        $columns = explode( "<hr />", get_the_content() );
-                    
-                        $column_1 = '';
-                        $column_2 = '';
-                    
-                        //if at least one column set $column_1 variable
-                        if(count($columns) > 0) {
-                            $column_1 = $columns[0];
-                        }
-                    
-                        //if the second column is set, put it into the $column_2 variable
-                        if(count($columns) > 1) {
-                            $column_2 = $columns[1];
-                        }
-                    </php>
-                    <h2 wp-the-title>Main Content</h2>
-                    <section class="col col-lg-7" wp-call-function="echo $column_1" wp-call-function-set="content">
-                        <article>
-                            <p>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
-                        </article>
-                    </section>
-                    <section class="col col-lg-5" wp-call-function="echo $column_2" wp-call-function-set="content">
-                        <article>
-                            <p>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
+                    <section class="col col-lg-8">
+                        <php>
+                                             if ( function_exists('yoast_breadcrumb') )
+                        {yoast_breadcrumb('<p id="breadcrumbs">','</p>');}
+                        </php>
+                        <article wp-loop wp-post-class wp-the-id class="">
+                            <img src="assets/images/article-image.jpg" class="img-rounded img-responsive" wp-the-post-thumbnail="full" wp-the-post-thumbnail-if="true" />
+                            <h2 wp-the-title class="">Main Content</h2>
+                            <p wp-the-content>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
                         </article>
                     </section>
                     <!-- main -->
                     <!-- SIDEBAR ================================================== -->
-                    <!-- sidebar -->
-                </div>
-                <div class="content row" id="about-images" wp-loop="teammembers" wp-loop-show-empty-text="false" wp-loop-post-type-custom="team_member" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-orderby="menu_order">
-                    <div class="col-xs-6 col-md-3" wp-post-type="team_member" wp-post-type-name="Team Members" wp-post-type-name-singular="Team Member" wp-post-type-public="true" wp-post-type-supports="title,editor,author,thumbnail,excerpt,trackbacks,custom-fields,comments,revisions,page-attributes,post-formats" wp-loop-item> 
-                        <div class="thumbnail"> 
-                            <img src="assets/images/staff-1.jpg" alt="" wp-the-post-thumbnail wp-the-post-thumbnail-if="true" wp-the-post-thumbnail-attr-class="img-responsive">
-                            <figcaption class="text-center team-title" wp-the-title>Dr D. Gedestad</figcaption>
-                            <figcaption class="text-center office-title" wp-the-content wp-the-content-set="content">Principal Dentist</figcaption>
-                        </div>                         
-                    </div>
-                    <div class="col-xs-6 col-md-3" wp-loop-skip> 
-                        <div class="thumbnail"> 
-                            <img src="assets/images/staff-2.jpg" alt="" class="">
-                            <figcaption class="text-center team-title">Dr P. Morris</figcaption>
-                            <figcaption class="text-center office-title">Associate Dentist</figcaption>
-                        </div>                         
-                    </div>
-                    <div class="col-xs-6 col-md-3" wp-loop-skip> 
-                        <div class="thumbnail"> 
-                            <img src="assets/images/staff-3.jpg" alt="">
-                            <figcaption class="text-center team-title">Brandy Tastle</figcaption>
-                            <figcaption class="text-center office-title">Practice Manger</figcaption>
-                        </div>                         
-                    </div>
-                    <div class="col-xs-6 col-md-3" wp-loop-skip> 
-                        <div class="thumbnail"> 
-                            <img src="assets/images/staff-4.jpg" alt="">
-                            <figcaption class="text-center team-title">Marry Jane</figcaption>
-                            <figcaption class="text-center office-title">Dental Assistant</figcaption>
-                        </div>                         
-                    </div>
-                    <!-- MAIN ================================================== -->
-                    <!-- main -->
-                    <!-- SIDEBAR ================================================== -->
+                    <section class="sidebar col col-lg-4" wp-register-sidebar="Right Sidebar" wp-register-sidebar-id="right_sidebar" wp-dynamic-sidebar="right_sidebar" wp-register-sidebar-before="<div>" wp-register-sidebar-after="</div>">
+                        <h2>Sidebar</h2>
+                        <p>Hello. I am the sidebar. I will now entice you with some ramdom lorem ipsum text.. here we gooo ..Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </section>
                     <!-- sidebar -->
                 </div>
                 <!-- content row -->
