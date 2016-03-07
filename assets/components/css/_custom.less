@@ -68,12 +68,6 @@ h1
     font-size: 30*@px;
 }
 
-h1,
-h2
-{
-    margin: 0 0 40*@px;
-}
-
 h3
 {
     margin: 20*@px 0;
@@ -94,7 +88,8 @@ p
     font-weight: 400;
 }
 
-ol li
+article ol li,
+article ul li
 {
     padding: 10*@px;
 }
@@ -856,10 +851,29 @@ footer
     margin-bottom: 40px;
 }
 
+.main article h2
+{
+    font-size: 26*@px;
+    color: #092579;
+    font-family: dosis, lato, san-serif;
+    margin: 10*@em 0;
+}
+
 .main article h3
 {
     color: #092579;
     font-family: dosis, lato, san-serif;
+}
+
+.main article p a,
+.main article ul a,
+.main article ol a {
+    color: @bk-blue;
+    text-decoration: underline;
+
+    &:hover {
+        color: @orange;
+    }
 }
 
 .main section
@@ -870,15 +884,15 @@ footer
 .read-more
 {
     margin-left: 5px;
-    color: @orange;
+    color: @orange !important;
 }
 
-#archive-content section h2
+#archive-content section h1
 {
     color: @orange;
     font-size: 2em;
     text-transform: uppercase;
-    margin: 20px 0;
+    margin: 20px 0 30px;
 }
 
 @media (min-width:768px) and (max-width:1199px)
@@ -889,11 +903,11 @@ footer
     }
 }
 
-.main article h2
+.main article h1
 {
     font-family: dosis, lato, san-serif;
     color: #092579;
-    font-size: 2.2em;
+    font-size: 30*@px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 30px 0 20px;
@@ -1015,8 +1029,8 @@ li.cat-item a::before {
     font-size: .8em;
 }
 
-.frontpage-content h2,
-.about-text h2
+.frontpage-content h1,
+.about-text h1
 {
     font-family: dosis, lato, san-serif;
     color: #092579;

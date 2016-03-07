@@ -32,10 +32,6 @@ h6 {
 h1 {
   font-size: 3rem;
 }
-h1,
-h2 {
-  margin: 0 0 4rem;
-}
 h3 {
   margin: 2rem 0;
 }
@@ -48,7 +44,8 @@ a {
 p {
   font-weight: 400;
 }
-ol li {
+article ol li,
+article ul li {
   padding: 1rem;
 }
 /* ==== WordPress Core ==== */
@@ -610,32 +607,49 @@ footer {
 .main article {
   margin-bottom: 40px;
 }
+.main article h2 {
+  font-size: 2.6rem;
+  color: #092579;
+  font-family: dosis, lato, san-serif;
+  margin: 1em 0;
+}
 .main article h3 {
   color: #092579;
   font-family: dosis, lato, san-serif;
+}
+.main article p a,
+.main article ul a,
+.main article ol a {
+  color: #4B7092;
+  text-decoration: underline;
+}
+.main article p a:hover,
+.main article ul a:hover,
+.main article ol a:hover {
+  color: #ED753D;
 }
 .main section {
   padding: 20px;
 }
 .read-more {
   margin-left: 5px;
-  color: #ED753D;
+  color: #ED753D !important;
 }
-#archive-content section h2 {
+#archive-content section h1 {
   color: #ED753D;
   font-size: 2em;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 20px 0 30px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .logo-wrap {
     padding-bottom: 20px;
   }
 }
-.main article h2 {
+.main article h1 {
   font-family: dosis, lato, san-serif;
   color: #092579;
-  font-size: 2.2em;
+  font-size: 3rem;
   font-weight: 600;
   text-transform: uppercase;
   margin: 30px 0 20px;
@@ -723,8 +737,8 @@ li.cat-item a::before {
   color: #ED753D;
   font-size: .8em;
 }
-.frontpage-content h2,
-.about-text h2 {
+.frontpage-content h1,
+.about-text h1 {
   font-family: dosis, lato, san-serif;
   color: #092579;
   font-size: 2.2em;
