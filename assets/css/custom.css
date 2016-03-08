@@ -35,6 +35,9 @@ h1 {
 h3 {
   margin: 2rem 0;
 }
+h3 a {
+  color: #0A267A;
+}
 h4 {
   font-size: 1.8rem;
 }
@@ -371,7 +374,7 @@ footer {
   transition: border 0.2s ease-in-out;
 }
 #about-doctor h3 {
-  font-family: dosis, lato, san-serif;
+  font-family: dosis, lato, sans-serif;
   color: #092579;
   text-transform: uppercase;
   font-size: 1.8em;
@@ -381,7 +384,7 @@ footer {
   text-transform: uppercase;
   text-align: center;
   color: white;
-  font-family: dosis, lato, san-serif;
+  font-family: dosis, lato, sans-serif;
   font-weight: 500;
   font-size: 1.8em;
 }
@@ -438,7 +441,7 @@ footer {
   overflow: hidden;
 }
 #set-appointment h3 {
-  font-family: dosis, lato, san-serif;
+  font-family: dosis, lato, sans-serif;
   font-size: 1.5em;
   text-transform: uppercase;
   text-align: center;
@@ -448,14 +451,14 @@ footer {
 }
 #oral-price h3 {
   color: #ED753D;
-  font-family: dosis, lato, san-serif;
+  font-family: dosis, lato, sans-serif;
   font-size: 8.5em;
   font-weight: 500;
   margin: 20px 0 0;
 }
 #oral-exam h3 {
   color: #ED753D;
-  font-family: dosis, lato, san-serif;
+  font-family: dosis, lato, sans-serif;
   font-size: 3em;
   font-weight: 500;
   margin: 5px 0 0;
@@ -467,7 +470,7 @@ footer {
 }
 #oral-exam p:first-of-type {
   font-size: 2em;
-  font-family: dosis, lato, san-serif;
+  font-family: dosis, lato, sans-serif;
   letter-spacing: .2em;
   margin-top: -45px;
   padding-left: 0px;
@@ -610,12 +613,12 @@ footer {
 .main article h2 {
   font-size: 2.6rem;
   color: #092579;
-  font-family: dosis, lato, san-serif;
+  font-family: dosis, lato, sans-serif;
   margin: 1em 0;
 }
 .main article h3 {
   color: #092579;
-  font-family: dosis, lato, san-serif;
+  font-family: dosis, lato, sans-serif;
 }
 .main article p a,
 .main article ul a,
@@ -647,7 +650,7 @@ footer {
   }
 }
 .main article h1 {
-  font-family: dosis, lato, san-serif;
+  font-family: dosis, lato, sans-serif;
   color: #092579;
   font-size: 3rem;
   font-weight: 600;
@@ -739,7 +742,7 @@ li.cat-item a::before {
 }
 .frontpage-content h1,
 .about-text h1 {
-  font-family: dosis, lato, san-serif;
+  font-family: dosis, lato, sans-serif;
   color: #092579;
   font-size: 2.2em;
   font-weight: 600;
@@ -748,7 +751,7 @@ li.cat-item a::before {
 }
 .about-text h3 {
   margin-top: 0px;
-  font-family: dosis, lato, san-serif;
+  font-family: dosis, lato, sans-serif;
   color: #092579;
 }
 .ada-logo {
@@ -940,4 +943,10 @@ input[type="button"] {
 #contact-page-content article a[href^="tel:"] {
   color: #092579 !important;
   text-decoration: none !important;
+}
+#page-content h2 {
+  font-size: 2.6rem;
+  color: #092579;
+  font-family: dosis, lato, sans-serif;
+  margin: 1em 0;
 }

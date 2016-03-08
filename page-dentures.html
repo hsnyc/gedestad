@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="gedestad" wp-site-theme-slug="gedestad" wp-site-themes-folder="/Users/henry/Documents/Hosts/gedestad-wp/wp-content/themes/gedestad" wp-site-preview-url="http://gedestad-wp.10.0.1.84.xip.io">
+<!doctype html>
+<html lang="en" wp-site wp-site-theme-name="gedestad" wp-site-theme-slug="gedestad" wp-site-themes-folder="/Users/henry/Documents/Hosts/gedestad-wp/wp-content/themes/gedestad" wp-site-preview-url="http://gedestad-wp" wp-site-master-page="index.html">
     <head class="">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
@@ -87,14 +87,24 @@
                 <!--.navbar-wrapper -->
             </header>
             <section class="main container" wp-site-content>
-                <div class="content row" id="index-content">
+                <div class="content row" id="page-content">
                     <!-- MAIN ================================================== -->
                     <section class="col col-lg-8">
-                        <article wp-loop wp-post-class wp-the-id class="">
+                        <article wp-loop wp-post-class wp-the-id>
+                            <h1 wp-the-title>Main Content</h1>
                             <img src="assets/images/article-image.jpg" class="img-rounded img-responsive" wp-the-post-thumbnail="full" wp-the-post-thumbnail-if="true" />
-                            <a href="http://" wp-href="post_permalink"><h2 wp-the-title>Main Content</h2></a>
-                            <p wp-the-excerpt>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</p>
+                            <div wp-the-content>Hello. This is the theme I use to start all my WordPress projects. Please feel free to use it for your own projects. You can change it a little or change it completely to fit your needs. This theme has the bare minimun styles so you can get a fresh start. In fact, the only css I used is to style the page you are currently looking at. Bootstrap 3 is my css framework of choice and I have included it with all the less files and all Js plug-ins. Feel free to enable/disable anything you don't need on the coresponding less files.</div>
                         </article>
+                        <php>
+                        query_posts('category_name=dentures');
+                                while (have_posts()) : the_post(); </php>
+                        <div wp-post-class wp-the-id class="">
+                            <a wp-the-permalink-href wp-the-permalink-href-set="href" class=""><h2 wp-the-title class=""></h2></a>
+                            <p wp-the-excerpt>Post Exerpt</p>
+                        </div>
+                        <php>
+                        endwhile;
+                        </php>
                     </section>
                     <!-- main -->
                     <!-- SIDEBAR ================================================== -->
